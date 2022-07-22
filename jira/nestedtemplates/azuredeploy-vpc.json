@@ -54,15 +54,15 @@
         },
         "vnet": {
             "name": "[concat(variables('namespace'), 'vnet')]",
-            "prefix": "10.0.0.0/16"
+            "prefix": "192.55.0.0/16"
         },
         "gtwySubnet": {
             "name": "[concat(variables('namespace'), 'appgwsubnet')]",
-            "prefix": "10.0.1.0/24"
+            "prefix": "192.55.1.0/24"
         },
         "appSubnet": {
             "name": "[concat(variables('namespace'), 'cluster', 'subnet')]",
-            "prefix": "10.0.2.0/24",
+            "prefix": "192.55.2.0/24",
             "nsg": {
                 "name": "[concat(variables('namespace'), 'cluster', 'nsg')]"
             }
